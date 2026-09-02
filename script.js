@@ -129,21 +129,18 @@ document.getElementById('endDate').addEventListener('change', function() {
     if (startDateVal && this.value && this.value < startDateVal) { this.value = startDateVal; }
 });
 
-// ซ่อน/แสดงข้อมูลวางบิล และดึงที่อยู่ พร้อมบังคับกรอก (Required)
+// ซ่อน/แสดงข้อมูลวางบิล และดึงที่อยู่ พร้อมตั้งเป็น Required
 document.querySelectorAll('.payment-radio').forEach(radio => {
     radio.addEventListener('change', function() {
         let isBilling = (this.value === 'วางบิลบริษัท - เครดิต 30 วัน (เฉพาะยอดขั้นต่ำ 50,000 บาท)');
-        
         document.getElementById('billingDetailsDiv').style.display = isBilling ? 'block' : 'none';
         
-        // เพิ่มเงื่อนไขบังคับกรอกเมื่อเลือก วางบิลบริษัท
         document.getElementById('billAddress').required = isBilling;
         document.getElementById('billName').required = isBilling;
         document.getElementById('billPhone').required = isBilling;
         document.getElementById('billDate').required = isBilling;
     });
 });
-
 document.getElementById('chkSameAddressBill').addEventListener('change', function() {
     document.getElementById('billAddress').value = this.checked ? getCompanyAddressStr() : '';
 });
