@@ -3,7 +3,7 @@ let currentLang = 'th';
 
 const i18n = {
     'th': {
-        mainTitle: 'การจัดส่งรายงานผลการตรวจสุขภาพภาพรวมของบริษัท', downloadTemp: 'ดาวน์โหลด Template รายชื่อผู้ตรวจสุขภาพ (Excel)',
+        mainTitle: 'แบบฟอร์มแจ้งความประสงค์ตรวจสุขภาพสำหรับองค์กร', downloadTemp: 'ดาวน์โหลด Template รายชื่อผู้ตรวจสุขภาพ (Excel)',
         orgInfo: 'ข้อมูลองค์กร', orgName: 'ชื่อองค์กร', authName: 'ชื่อผู้มีอำนาจลงนาม', position: 'ตำแหน่ง', email: 'อีเมล', phone: 'เบอร์โทรศัพท์',
         taxInfo: 'เอกสารประกอบการเปิดเครดิต', taxId: 'เลขประจำตัวผู้เสียภาษี', addressNo: 'เลขที่/อาคาร/ชั้น', street: 'ถนน', soi: 'ซอย', zipcode: 'รหัสไปรษณีย์', subdistrict: 'แขวง/ตำบล', district: 'เขต/อำเภอ', province: 'จังหวัด',
         fileReg: 'สำเนาใบจดทะเบียนการค้า (เฉพาะบริษัทใหม่)', fileVat: 'สำเนาใบ ภ.พ.20 (เฉพาะบริษัทใหม่)', 
@@ -14,7 +14,7 @@ const i18n = {
         emTitle: 'ผู้ประสานงานกรณีเร่งด่วน', emName: 'ชื่อ-นามสกุล', emPosition: 'ตำแหน่ง', emMobile: 'โทรศัพท์มือถือ', emOffice: 'โทรศัพท์สำนักงาน',
         resTitle: 'วิธีการยืนยันสิทธิ์เข้ารับบริการ', resVerify: 'วิธีการยืนยันสิทธิ์:', resIdCard: 'ใช้บัตรประชาชน (บริษัท/HR ต้องส่งรายชื่อผู้เข้ารับบริการล่วงหน้าอย่างน้อย 10 วันทำการ ก่อนวันตรวจ)', resReferral: 'ใช้ใบส่งตัวจากบริษัท (กรณีตรวจสุขภาพก่อนเข้าทำงาน)', 
         resDeliPerson: 'การจัดส่งผลตรวจรายบุคคล:', resDeliEmp: 'จัดส่งให้พนักงานโดยตรง', resDeliHR: 'จัดส่งให้บริษัท/ผู้ประสานงาน HR', resDeliSelf: 'รับผลด้วยตนเองที่โรงพยาบาล', 
-        resDeliReport: 'การจัดส่งรายงานผลภาพรวมของบริษัท:', resRepNone: 'ไม่ต้องการ', resRepSummary: 'ต้องการรายงานสรุปผลในภาพรวม 1 ฉบับ', resRepCopy: 'ต้องการสำเนาผลตรวจของพนักงานแต่ละรายบุคคล',
+        resDeliReport: 'การจัดส่งรายงานผลการตรวจสุขภาพภาพรวมของบริษัท:', resRepNone: 'ไม่ต้องการ', resRepSummary: 'ต้องการรายงานสรุปผลในภาพรวม 1 ฉบับ', resRepCopy: 'ต้องการสำเนาผลตรวจของพนักงานแต่ละรายบุคคล',
         sumTitle: 'เลือกรูปแบบการสรุปผล', fmt1Title: 'รูปแบบที่ 1', fmt1Desc: 'สรุปรวมตามสัญชาติ', fmt2Title: 'รูปแบบที่ 2', fmt2Desc: 'สรุปรวมภาษาไทย', fmt3Title: 'รูปแบบที่ 3', fmt3Desc: 'สรุปรวมภาษาอังกฤษ', sumRecTitle: 'ข้อมูลผู้รับผลรายงาน', sumName: 'ชื่อผู้รับผลรายงานตรวจสุขภาพ', sumPhone: 'เบอร์โทร', sumAddress: 'ที่อยู่', sumNote: '(หมายเหตุ: กรุณาเลือกความประสงค์เพียง 1 รายการ ทั้งนี้ หากประสงค์รับทั้งรายงานสรุปผลในภาพรวมและผลการตรวจสุขภาพรายบุคคล ภายหลังจากตอบรับแล้ว อาจมีค่าใช้จ่ายเพิ่มเติมตามเงื่อนไขที่กำหนด)',
         attachTitle: 'เอกสารแนบเพิ่มเติม', attachEmp: 'ไฟล์รายชื่อพนักงานที่ตรวจ (Excel)', attachQuote: 'ใบเสนอราคาพร้อมประทับตราบริษัท', attachReferral: 'ตัวอย่างใบส่งตัวของบริษัท (เฉพาะตรวจสุขภาพก่อนเข้าทำงาน)',
         btnPreview: 'ตรวจสอบข้อมูล (Preview)', pdpaTitle: 'บริษัทรับทราบและตกลงยินยอมให้เผยแพร่ข้อมูลส่วนบุคคลในการลงทะเบียนครั้งนี้', btnAccept: 'ยอมรับ (Accept)',
@@ -22,7 +22,7 @@ const i18n = {
         pdpaHeader: 'บริษัทรับทราบข้อมูลและขอแสดงเจตนายินยอม ดังต่อไปนี้', pdpaP1: 'บริษัทยินยอมให้โรงพยาบาลกรุงเทพคริสเตียน (“โรงพยาบาล ฯ”) ในฐานะผู้ควบคุมข้อมูลส่วนบุคคลดำเนินการเก็บรวบรวม ใช้ หรือเปิดเผย (“การประมวลผล”) ข้อมูลส่วนบุคคลของบริษัท <b>เพื่อวัตถุประสงค์ต่าง ๆ ดังนี้</b>', pdpaP2: '<b>1.เพื่อวัตถุประสงค์ในการตรวจรักษาโรคและให้บริการทางการแพทย์</b>', pdpaP3: '<b>2.เพื่อวัตถุประสงค์ในเชื่อมโยงฐานข้อมูลอิเล็กทรอนิกส์ด้านเวชระเบียน</b>', pdpaP4: '<b>3. เพื่อวัตถุประสงค์ในการใช้สิทธิเรียกค่าสินไหมทดแทนจากบริษัทประกันภัย</b>', pdpaP5: '<b>4.เพื่อวัตถุประสงค์ในการนำเสนอข้อมูลข่าวสารของโรงพยาบาล ฯ </b>', pdpaP6: 'ทั้งนี้ บริษัทได้อ่านนโยบายคุ้มครองข้อมูลส่วนบุคคล (Data Protection Policy) โดย scan QR Code ด้านล่างนี้เรียบร้อยแล้ว', pdpaP7: 'บริษัททราบว่า บริษัทสามารถถอนความยินยอมนี้เสียเมื่อใดก็ได้'
     },
     'en': {
-        mainTitle: 'Corporate Health Checkup Summary Report Delivery', downloadTemp: 'Download Attendee List Template (Excel)',
+        mainTitle: 'Corporate Health Checkup Request Form', downloadTemp: 'Download Attendee List Template (Excel)',
         orgInfo: 'Organization Info', orgName: 'Company Name', authName: 'Authorized Signatory', position: 'Position', email: 'Email', phone: 'Phone Number',
         taxInfo: 'Credit Opening Documents', taxId: 'Tax ID', addressNo: 'Building/Floor/Room', street: 'Street', soi: 'Alley', zipcode: 'Zip Code', subdistrict: 'Sub-district', district: 'District', province: 'Province',
         fileReg: 'Copy of Commercial Registration (New Company Only)', fileVat: 'Copy of VAT 20 (New Company Only)', 
@@ -33,7 +33,7 @@ const i18n = {
         emTitle: 'Emergency Contact', emName: 'Full Name', emPosition: 'Position', emMobile: 'Mobile Phone', emOffice: 'Office Phone',
         resTitle: 'Service Verification Method', resVerify: 'Verification Method:', resIdCard: 'ID Card (Company/HR must submit attendee list at least 10 working days prior)', resReferral: 'Company Referral Letter (For Pre-employment Checkup)', 
         resDeliPerson: 'Individual Result Delivery:', resDeliEmp: 'Deliver to employee directly', resDeliHR: 'Deliver to Company/HR', resDeliSelf: 'Self-pickup at hospital', 
-        resDeliReport: 'Corporate Summary Report:', resRepNone: 'Not required', resRepSummary: 'Require 1 Summary Report', resRepCopy: 'Require copies of individual results',
+        resDeliReport: 'Corporate Health Checkup Summary Report Delivery:', resRepNone: 'Not required', resRepSummary: 'Require 1 Summary Report', resRepCopy: 'Require copies of individual results',
         sumTitle: 'Select Summary Format', fmt1Title: 'Format 1', fmt1Desc: 'Summary by Nationality', fmt2Title: 'Format 2', fmt2Desc: 'Summary in Thai', fmt3Title: 'Format 3', fmt3Desc: 'Summary in English', sumRecTitle: 'Receiver Information', sumName: 'Receiver Name', sumPhone: 'Phone Number', sumAddress: 'Address', sumNote: '(Note: Please select only 1 option. Requesting both summary and individual reports after confirmation may incur additional charges based on conditions.)',
         attachTitle: 'Additional Attachments', attachEmp: 'Attendee List (Excel)', attachQuote: 'Quotation with Company Seal', attachReferral: 'Sample of Company Referral Letter (Pre-employment only)',
         btnPreview: 'Preview Data', pdpaTitle: 'The company acknowledges and consents to the disclosure of personal data for this registration.', btnAccept: 'Accept',
@@ -41,7 +41,7 @@ const i18n = {
         pdpaHeader: 'PDPA Consent', pdpaP1: 'The company consents to Bangkok Christian Hospital collecting and processing personal data for the following purposes:', pdpaP2: '<b>1. For medical treatment and services.</b>', pdpaP3: '<b>2. For electronic medical record linkages.</b>', pdpaP4: '<b>3. For insurance claims.</b>', pdpaP5: '<b>4. For hospital news and promotions.</b>', pdpaP6: 'The company has read the Data Protection Policy via QR Code.', pdpaP7: 'The company acknowledges that this consent can be withdrawn at any time.'
     },
     'ko': {
-        mainTitle: '기업 건강검진 종합 보고서 발송', downloadTemp: '참석자 명단 템플릿 다운로드 (Excel)',
+        mainTitle: '기업 건강검진 신청서', downloadTemp: '참석자 명단 템플릿 다운로드 (Excel)',
         orgInfo: '조직 정보', orgName: '회사 이름', authName: '공인 서명자', position: '직위', email: '이메일', phone: '전화번호',
         taxInfo: '신용 개설 서류', taxId: '세금 ID', addressNo: '건물/층/호', street: '거리', soi: '골목', zipcode: '우편번호', subdistrict: '읍/면/동', district: '구/군', province: '시/도',
         fileReg: '사업자 등록증 사본 (신규 기업만)', fileVat: 'VAT 20 사본 (신규 기업만)', 
@@ -52,7 +52,7 @@ const i18n = {
         emTitle: '비상 연락처', emName: '성명', emPosition: '직위', emMobile: '휴대전화', emOffice: '사무실 전화',
         resTitle: '서비스 확인 방법', resVerify: '신원 확인 방법:', resIdCard: '신분증 (HR은 10영업일 전까지 명단 제출)', resReferral: '회사 추천서 (채용 전 검진)', 
         resDeliPerson: '개인 결과 배송:', resDeliEmp: '직원에게 직접 배송', resDeliHR: '회사/HR 담당자에게 배송', resDeliSelf: '병원 직접 수령', 
-        resDeliReport: '기업 종합 보고서:', resRepNone: '필요 없음', resRepSummary: '종합 보고서 1부 필요', resRepCopy: '개별 결과 사본 필요',
+        resDeliReport: '기업 건강검진 종합 보고서 발송:', resRepNone: '필요 없음', resRepSummary: '종합 보고서 1부 필요', resRepCopy: '개별 결과 사본 필요',
         sumTitle: '요약 형식 선택', fmt1Title: '형식 1', fmt1Desc: '국적별 요약', fmt2Title: '형식 2', fmt2Desc: '태국어 요약', fmt3Title: '형식 3', fmt3Desc: '영어 요약', sumRecTitle: '수신자 정보', sumName: '수신자 이름', sumPhone: '전화번호', sumAddress: '주소', sumNote: '(참고: 1개의 옵션만 선택해주세요. 확인 후 두 가지 모두 요청시 추가 비용이 발생할 수 있습니다.)',
         attachTitle: '추가 첨부 파일', attachEmp: '참석자 명단 (Excel)', attachQuote: '회사 직인이 찍힌 견적서', attachReferral: '회사 추천서 샘플 (채용 전 검진)',
         btnPreview: '데이터 미리보기', pdpaTitle: '본 회사는 이 등록을 위해 개인 데이터 공개를 확인하고 동의합니다.', btnAccept: '동의 (Accept)',
@@ -60,7 +60,7 @@ const i18n = {
         pdpaHeader: '개인정보 처리 방침 동의', pdpaP1: '회사는 방콕 크리스천 병원이 다음 목적을 위해 개인 데이터를 수집하고 처리하는 데 동의합니다.', pdpaP2: '<b>1. 의료 및 서비스 목적.</b>', pdpaP3: '<b>2. 전자의무기록 연계 목적.</b>', pdpaP4: '<b>3. 보험 청구 목적.</b>', pdpaP5: '<b>4. 병원 소식 및 프로모션 안내.</b>', pdpaP6: '회사는 QR 코드를 통해 개인정보 보호 정책을 읽었습니다.', pdpaP7: '회사는 이 동의를 언제든지 철회할 수 있음을 인지합니다.'
     },
     'ja': {
-        mainTitle: '企業向け健康診断結果サマリーレポート送付', downloadTemp: '受診者リストテンプレート (Excel)',
+        mainTitle: '企業向け健康診断申込書', downloadTemp: '受診者リストテンプレート (Excel)',
         orgInfo: '組織情報', orgName: '会社名', authName: '代表者名', position: '役職', email: 'メール', phone: '電話番号',
         taxInfo: 'クレジット開設書類', taxId: '納税者番号', addressNo: 'ビル/階/室', street: '通り', soi: '路地', zipcode: '郵便番号', subdistrict: '町/村', district: '区/郡', province: '都道府県',
         fileReg: '商業登記簿の写し (新規企業のみ)', fileVat: 'VAT 20の写し (新規企業のみ)', 
@@ -71,7 +71,7 @@ const i18n = {
         emTitle: '緊急連絡先', emName: '氏名', emPosition: '役職', emMobile: '携帯電話', emOffice: '会社の電話',
         resTitle: '本人確認方法', resVerify: '確認方法:', resIdCard: '身分証明書 (HRは10営業日前までに名簿を提出)', resReferral: '紹介状 (入社前検診)', 
         resDeliPerson: '個人結果の送付:', resDeliEmp: '従業員へ直接送付', resDeliHR: '会社/HR担当者へ送付', resDeliSelf: '病院で直接受け取り', 
-        resDeliReport: '企業向け全体レポート:', resRepNone: '不要', resRepSummary: '全体サマリーレポート1部', resRepCopy: '個人の結果のコピー',
+        resDeliReport: '企業向け健康診断結果サマリーレポート送付:', resRepNone: '不要', resRepSummary: '全体サマリーレポート1部', resRepCopy: '個人の結果のコピー',
         sumTitle: 'サマリー形式の選択', fmt1Title: '形式 1', fmt1Desc: '国籍別サマリー', fmt2Title: '形式 2', fmt2Desc: 'タイ語サマリー', fmt3Title: '形式 3', fmt3Desc: '英語サマリー', sumRecTitle: '受取人情報', sumName: '受取人名', sumPhone: '電話番号', sumAddress: '住所', sumNote: '(注: 1つのオプションのみ選択してください。確認後に両方をリクエストした場合、追加料金が発生する場合があります。)',
         attachTitle: '追加の添付ファイル', attachEmp: '受診者リスト (Excel)', attachQuote: '社印付き見積書', attachReferral: '紹介状のサンプル（入社前検診）',
         btnPreview: 'プレビュー', pdpaTitle: '当社は、この登録のための個人データの開示を認め、同意します。', btnAccept: '同意する (Accept)',
